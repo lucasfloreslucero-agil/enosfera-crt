@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es-AR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enosfera para creadores · Hacé crecer tu comunidad</title>
+<meta name="description" content="Enosfera es el lugar propio de los creadores y productores del vino: sumá seguidores, vendé catas y contenido, y financiá tus proyectos con tu comunidad.">
+<!-- Versión alternativa en revisión (estética "Señal CRT"). No la indexan los buscadores. -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B1524">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Petrona:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.469.0/font/lucide.css">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/crt.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="b2"/>
+      <feMerge><feMergeNode in="b2"/><feMergeNode in="b1"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="site-header__in">
+    <a href="#inicio" class="site-logo focusable" aria-label="Enosfera, ir al inicio">
+      <span class="eno-logo"><svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="var(--logo-liquid)"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--logo-ring)" stroke-width="6"/></svg><span style="font-size:21.84px">enosfera</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Secciones">
+      <a class="focusable" href="#como-funciona">Cómo funciona</a>
+      <a class="focusable" href="#que-vender">Qué podés vender</a>
+      <a class="focusable" href="#preventas">Preventas</a>
+      <a class="focusable" href="#como-cobras">Cómo cobrás</a>
+      <a class="focusable" href="#preguntas">Preguntas</a>
+    </nav>
+    <button type="button" class="btn-pill btn-pill--sm" data-open>Postulate<span class="btn-arrow"><i class="eno-icon icon-arrow-right" aria-hidden="true"></i></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero con barras de señal -->
+<section id="inicio" class="hero scanlines">
+  <canvas class="hero-canvas" width="455" height="300" aria-hidden="true"></canvas>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="roll-band" aria-hidden="true"></div>
+
+  <div class="hero-top">
+    <span class="badge-live"><i class="dot blink" aria-hidden="true"></i>Postulaciones abiertas</span>
+    <span class="eyebrow">CH 00 · Hecho en Mendoza</span>
+  </div>
+
+  <div class="hero-content flicker">
+    <span class="eyebrow">Para creadores y productores del vino</span>
+    <h1 class="display">Hacé crecer tu comunidad del vino <span class="hl">en un lugar propio.</span></h1>
+    <p class="lead">Sumá seguidores, cuidá a los que ya tenés y financiá tus proyectos con ellos. Enosfera resuelve todo lo que necesitás para vender, cobrar y lanzar.</p>
+    <div class="hero-actions">
+      <button type="button" class="btn-pill btn-pill--accent" data-open>Postulate como creador<span class="btn-arrow"><i class="eno-icon icon-arrow-right" aria-hidden="true"></i></span></button>
+      <a class="link-u" href="#como-funciona">Ver cómo funciona</a>
+    </div>
+    <p class="small">En el lanzamiento se entra por postulación. Leemos cada una.</p>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Catas y visitas</span><span>Cursos y contenido</span><span>Preventas con meta mínima</span><span>Cobro directo a tu cuenta</span><span>Comunidad del vino</span><span>Hecho en Mendoza</span>
+    <span>Catas y visitas</span><span>Cursos y contenido</span><span>Preventas con meta mínima</span><span>Cobro directo a tu cuenta</span><span>Comunidad del vino</span><span>Hecho en Mendoza</span>
+  </div>
+</div>
+
+<!-- El problema -->
+<section class="sec" aria-labelledby="t-problema">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Señal débil</span>
+      <h2 id="t-problema" class="manifesto reveal-words">Las redes te dan alcance. <em class="hl">El resto lo venís resolviendo a mano.</em></h2>
+    </div>
+    <div class="tv-grid">
+      <figure class="tv-fig reveal" style="--i:0">
+        <div class="tv" aria-hidden="true"><div class="tv-screen tv-screen--bars scanlines"><span class="tv-tag">Sin ingreso</span></div><div class="tv-knobs"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><h3>Tenés seguidores, pero no un ingreso</h3><p>Te leen, te escuchan y te preguntan qué descorchar. Las redes no te pagan por lo que sabés.</p></figcaption>
+      </figure>
+      <figure class="tv-fig reveal" style="--i:1">
+        <div class="tv tv--piedra" aria-hidden="true"><div class="tv-screen tv-screen--bars scanlines"><span class="tv-tag">Todo a mano</span></div><div class="tv-knobs"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><h3>Vendés tus catas a mano</h3><p>Mensajes para coordinar, transferencias para cobrar, un Drive para el curso y una planilla para saber quién viene.</p></figcaption>
+      </figure>
+      <figure class="tv-fig reveal" style="--i:2">
+        <div class="tv tv--tinta" aria-hidden="true"><div class="tv-screen tv-screen--bars scanlines"><span class="tv-tag">Sin financiamiento</span></div><div class="tv-knobs"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><h3>Lo nuevo sale de tu bolsillo</h3><p>Para lanzar una línea o un proyecto dependés de tus ahorros o de un banco, aunque tu gente ya lo esté esperando.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Cómo funciona -->
+<section id="como-funciona" class="sec sec--alt">
+  <div class="wrap split">
+    <div class="head" style="margin:0">
+      <span class="eyebrow">CH 01 · Cómo funciona</span>
+      <h2 class="display display--sec">Todo lo que hoy armás suelto, <span class="hl">en un solo lugar.</span></h2>
+      <p class="lead">Vos sumás gente y la cuidás. Enosfera pone lo demás.</p>
+    </div>
+    <div class="term">
+      <div class="term-bar"><span>enosfera.log · lo que hace la plataforma</span><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      <ol class="term-body">
+        <li class="reveal" style="--i:0"><b style="--c:var(--sig-yellow)">[perfil]</b><span>Tu espacio propio, con tu marca adelante y tu link para la bio.</span></li>
+        <li class="reveal" style="--i:1"><b style="--c:var(--sig-cyan)">[contenido]</b><span>Publicaciones gratis y exclusivas: texto, fotos y videos cortos.</span></li>
+        <li class="reveal" style="--i:2"><b style="--c:var(--sig-green)">[catas]</b><span>Experiencias con cupos. La lista de asistentes se arma sola.</span></li>
+        <li class="reveal" style="--i:3"><b style="--c:var(--sig-magenta)">[preventas]</b><span>Tu comunidad compra por anticipado, con meta mínima.</span></li>
+        <li class="reveal" style="--i:4"><b style="--c:var(--sig-yellow)">[cobro]</b><span>Directo a tu cuenta por Mercado Pago, sin que nadie retenga tu plata.</span></li>
+        <li class="reveal" style="--i:5"><b style="--c:var(--sig-cyan)">[trámites]</b><span>Comprobantes y devoluciones los gestiona la plataforma.</span></li>
+        <li class="reveal" style="--i:6"><b style="--c:var(--sig-green)">[métricas]</b><span>Quién te sigue, qué se lee, cómo vienen tus reservas.</span></li>
+        <li class="reveal" style="--i:7"><b style="--c:var(--sig-magenta)">[regalos]</b><span>Quien compra puede regalar o transferir su lugar en una cata o un curso.</span></li>
+        <li class="reveal" style="--i:8"><b style="--c:var(--hl)">[reputación]</b><span>Tu comunidad califica lo que vivió con vos y se ve en tu perfil.</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="wrap tv-panel">
+    <div class="tv-panel__head"><span class="eyebrow">Tu panel, en tres pantallas</span><p class="small">Ejemplo con datos ficticios.</p></div>
+    <div class="tv-grid">
+      <figure class="tv-fig reveal" style="--i:0">
+        <div class="tv tv--tinta"><div class="tv-screen scanlines"><span class="tv-ch">CH 01</span><strong class="tv-big chroma">2.480</strong><span class="tv-label">Seguidores</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><p>86 nuevos este mes.</p></figcaption>
+      </figure>
+      <figure class="tv-fig reveal" style="--i:1">
+        <div class="tv tv--tinta"><div class="tv-screen scanlines"><span class="tv-ch">CH 02</span><strong class="tv-big chroma">9.320</strong><span class="tv-label">Lecturas</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><p>En los últimos 30 días.</p></figcaption>
+      </figure>
+      <figure class="tv-fig reveal" style="--i:2">
+        <div class="tv tv--tinta"><div class="tv-screen scanlines"><span class="tv-ch">CH 03</span><strong class="tv-big chroma">31</strong><span class="tv-label">Reservas</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><p>Este mes. Próxima cata: 8 de 12 cupos reservados.</p></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Qué podés vender -->
+<section id="que-vender" class="sec">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">CH 02 · Qué podés vender</span>
+      <h2 class="display display--sec">Cuatro maneras <span class="hl">de usar tu espacio.</span></h2>
+      <p class="small">Los creadores y los productos de los ejemplos son ficticios.</p>
+    </div>
+    <ul class="channels">
+      <li class="group">
+        <div class="ch"><i class="ch-icon" style="--c:var(--sig-yellow)" aria-hidden="true"></i>CH 01</div>
+        <div class="ch-body">
+          <span class="eyebrow">En el aire · Con fecha y cupos</span>
+          <h3 class="condensed glitch" data-text="Catas y experiencias">Catas y experiencias</h3>
+          <p>Catas presenciales u online, visitas a bodega y maridajes, con fecha, cupos y lista de asistentes automática.</p>
+          <p class="ex"><b>Lucía, sommelier,</b> llena una cata de 12 cupos sin coordinar nada por WhatsApp.</p>
+        </div>
+        <div class="ch-thumb scanlines"><img src="assets/img/cata-mesa.jpg" alt="Dos copas de vino blanco y una picada sobre una mesa, con un viñedo de fondo" width="960" height="540" loading="lazy"></div>
+      </li>
+      <li class="group">
+        <div class="ch"><i class="ch-icon" style="--c:var(--sig-cyan)" aria-hidden="true"></i>CH 02</div>
+        <div class="ch-body">
+          <span class="eyebrow">Pago único</span>
+          <h3 class="condensed glitch" data-text="Cursos y contenido exclusivo">Cursos y contenido exclusivo</h3>
+          <p>Publicaciones pagas con texto, fotos y videos cortos. Se desbloquean con un pago único.</p>
+          <p class="ex"><b>Tomás, enólogo,</b> vende su guía para iniciarse en la cata, con videos.</p>
+        </div>
+        <div class="ch-thumb scanlines"><img src="assets/img/copas-barricas.jpg" alt="Cinco copas servidas con vinos de distintos colores sobre una mesa de madera" width="960" height="540" loading="lazy"></div>
+      </li>
+      <li class="group">
+        <div class="ch"><i class="ch-icon" style="--c:var(--sig-magenta)" aria-hidden="true"></i>CH 03</div>
+        <div class="ch-body">
+          <span class="eyebrow">Compra anticipada</span>
+          <h3 class="condensed glitch" data-text="Preventa de nuevas líneas">Preventa de nuevas líneas</h3>
+          <p>Tu comunidad compra por anticipado y vos producís con esa base.</p>
+          <p class="ex"><b>Finca Dos Acequias</b> financia los insumos de su nueva línea con la preventa a su comunidad. <a href="#preventas">Mirá cómo funciona una preventa</a></p>
+        </div>
+        <div class="ch-thumb scanlines"><img src="assets/img/cosecha-cajon.jpg" alt="Cajón con uvas tintas recién cosechadas" width="960" height="540" loading="lazy"></div>
+      </li>
+      <li class="group">
+        <div class="ch"><i class="ch-icon" style="--c:var(--sig-green)" aria-hidden="true"></i>CH 04</div>
+        <div class="ch-body">
+          <span class="eyebrow">Gratis</span>
+          <h3 class="condensed glitch" data-text="Comunidad gratis">Comunidad gratis</h3>
+          <p>También podés usar Enosfera solo para reunir y cuidar a tu gente, sin vender nada.</p>
+          <p class="ex"><b>Empezás gratis.</b> Los datos fiscales te los pedimos recién cuando quieras vender.</p>
+        </div>
+        <div class="ch-thumb scanlines"><img src="assets/img/vid-invierno.jpg" alt="Manos con guantes trabajando una vid en invierno" width="960" height="720" loading="lazy"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Preventas -->
+<section id="preventas" class="sec sec--tinta" style="padding-bottom:0">
+  <div class="wrap head" style="margin-bottom:0">
+    <span class="eyebrow">CH 03 · Preventas</span>
+    <h2 class="display display--sec">Financiá tu próximo proyecto <span class="hl">con tu comunidad.</span></h2>
+    <p class="lead">Lanzás una línea nueva y tu gente la compra por anticipado. Con eso cubrís insumos y producción antes de embotellar, sin poner todo de tu bolsillo.</p>
+  </div>
+</section>
+
+<section class="pin" aria-label="Cómo funciona una preventa, paso a paso">
+  <div class="pin-stage">
+    <svg class="loop" viewBox="0 0 400 400" aria-hidden="true">
+      <path class="seg" d="M40.5 187.7 L341.9 273.8 A160 160 0 0 1 40.5 187.7 Z"/>
+      <path class="track" d="M200 40 A160 160 0 1 1 200 360 A160 160 0 1 1 200 40"/>
+      <path class="draw" filter="url(#bloom)" d="M200 40 A160 160 0 1 1 200 360 A160 160 0 1 1 200 40"/>
+      <g class="node" data-step="0" style="--c:var(--sig-yellow)"><circle cx="309" cy="83" r="17"/><text x="309" y="83">01</text></g>
+      <g class="node" data-step="1" style="--c:var(--sig-cyan)"><circle cx="317" cy="309" r="17"/><text x="317" y="309">02</text></g>
+      <g class="node" data-step="2" style="--c:var(--sig-green)"><circle cx="91" cy="317" r="17"/><text x="91" y="317">03</text></g>
+      <g class="node" data-step="3" style="--c:var(--paper)"><circle cx="200" cy="300" r="17"/><text x="200" y="300">04</text></g>
+    </svg>
+
+    <div class="pin-copy">
+      <article class="step is-active"><span class="step-n">Paso 01</span><h3 class="display display--step">Fijás una meta mínima <span class="hl">y una fecha límite.</span></h3><p class="lead">Si la meta no se alcanza, no se le cobra a nadie.</p></article>
+      <article class="step" aria-hidden="true"><span class="step-n">Paso 02</span><h3 class="display display--step">Cada compra genera <span class="hl">un vale digital único.</span></h3><p class="lead">Va a nombre de quien compra. Lo puede regalar o transferir, y lo canjea por sus botellas cuando están listas.</p></article>
+      <article class="step" aria-hidden="true"><span class="step-n">Paso 03</span><h3 class="display display--step">Cada vale es auténtico <span class="hl">y trazable.</span></h3><p class="lead">Se puede seguir desde la preventa hasta el canje.</p></article>
+      <article class="step" aria-hidden="true"><span class="step-n">Paso 04</span><h3 class="display display--step">Tu comunidad acompaña <span class="hl">desde el primer día.</span></h3><p class="lead">Le contás cómo viene la cosecha, la elaboración y el embotellado.</p></article>
+    </div>
+
+    <ol class="pin-progress" aria-hidden="true">
+      <li style="--c:var(--sig-yellow)"><i></i>01 Meta mínima</li>
+      <li style="--c:var(--sig-cyan)"><i></i>02 Vale digital</li>
+      <li style="--c:var(--sig-green)"><i></i>03 Trazable</li>
+      <li style="--c:var(--hl)"><i></i>04 Comunidad</li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--tinta sec--tight">
+  <div class="wrap split split--top">
+    <div class="stack">
+      <div class="note"><b>Pensada para el vino argentino</b><p>Las plataformas internacionales de financiamiento colectivo no permiten lanzar campañas desde Argentina ni ofrecer vino como recompensa. Enosfera nace para resolver eso.</p></div>
+      <div><button type="button" class="btn-pill btn-pill--accent" data-open="preventa">Quiero lanzar una preventa<span class="btn-arrow"><i class="eno-icon icon-arrow-right" aria-hidden="true"></i></span></button></div>
+      <p class="small">El ejemplo de la derecha es ficticio.</p>
+    </div>
+
+    <div class="stack">
+      <div class="panel reveal">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="eno-avatar" style="width:44px;height:44px;font-size:17.6px" aria-hidden="true">FD</span>
+          <div style="flex:1;min-width:0"><div class="kv">Preventa de Finca Dos Acequias</div><div style="font-weight:800;font-stretch:112%;font-size:1.35rem;line-height:1.2;text-transform:uppercase">Criolla, primera cosecha</div></div>
+        </div>
+        <p class="small" style="margin-top:14px">Caja de 3 botellas de criolla, una uva histórica de Mendoza, de un parral de 60 años.</p>
+        <p style="margin:20px 0 0;font-variant-numeric:tabular-nums"><b style="font-size:1.6rem;font-stretch:112%">258</b> <span class="small">de 300 botellas de meta mínima</span></p>
+        <div class="meter" role="img" aria-label="212 botellas confirmadas y 46 reservadas, sobre una meta mínima de 300"><div style="width:70.6%;background:var(--sig-cyan)"></div><div style="width:15.4%;background:var(--sig-blue)"></div></div>
+        <div class="legend"><span><i style="background:var(--sig-cyan)"></i><b style="color:var(--paper)">212</b> confirmadas</span><span><i style="background:var(--sig-blue)"></i><b style="color:var(--paper)">46</b> reservadas</span></div>
+        <div style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px">
+          <div class="kv">Fecha límite<b>28 de febrero</b></div>
+          <div class="kv">Entrega estimada<b>Octubre de 2027</b></div>
+        </div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--smoke)" class="price"><small>Precio final · caja de 3</small><b>$ 54.000</b></div>
+      </div>
+
+      <div class="panel panel--flush reveal" style="--i:1">
+        <div style="padding:20px 24px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
+          <div><span class="eyebrow">Vale digital</span><div class="mono" style="margin-top:6px;font-size:1.35rem;font-variant-numeric:tabular-nums">N.º ENO-0427-1183</div></div>
+          <span class="chip-static" style="color:var(--sig-green)"><i class="eno-icon icon-check" style="font-size:13px" aria-hidden="true"></i>Confirmado</span>
+        </div>
+        <div style="border-top:1.5px dashed var(--smoke-2);padding:20px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px">
+          <div class="kv">Producto<b>Criolla, primera cosecha · caja de 3</b></div>
+          <div class="kv">Creador<b>Finca Dos Acequias</b></div>
+          <div class="kv">A nombre de<b>Carolina Méndez</b></div>
+        </div>
+        <div style="padding:0 24px 20px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8rem;font-weight:600">
+          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--paper-2)"><i class="eno-icon icon-circle-check" style="font-size:16px;color:var(--sig-green)" aria-hidden="true"></i>Reservado</span>
+          <span style="flex:1;min-width:16px;height:2px;background:var(--sig-green)"></span>
+          <span style="display:inline-flex;align-items:center;gap:6px"><i class="eno-icon icon-circle-check" style="font-size:16px;color:var(--sig-green)" aria-hidden="true"></i>Confirmado</span>
+          <span style="flex:1;min-width:16px;height:2px;background:var(--smoke-2)"></span>
+          <span style="display:inline-flex;align-items:center;gap:6px;color:var(--paper-2)"><i class="eno-icon icon-circle" style="font-size:16px" aria-hidden="true"></i>Canjeado</span>
+        </div>
+        <div style="padding:14px 24px;background:var(--ink-3);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+          <span class="small">Lo canjeás por tus botellas cuando estén listas.</span>
+          <span class="chip-static" style="color:var(--paper)"><i class="eno-icon icon-gift" style="font-size:13px" aria-hidden="true"></i>Regalar o transferir</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Comunidad -->
+<section class="sec" aria-labelledby="t-comunidad">
+  <div class="wrap cols">
+    <div class="rings" id="rings" role="img" aria-label="Tu comunidad conectada con las comunidades de otros dos creadores">
+      <div class="halo" aria-hidden="true"></div>
+      <svg viewBox="0 0 480 380" aria-hidden="true">
+        <circle cx="240" cy="215" r="112" fill="none" stroke="var(--smoke-2)" stroke-width="1.5"/>
+        <circle cx="86" cy="84" r="64" fill="none" stroke="var(--smoke-2)" stroke-width="1.5"/>
+        <circle cx="400" cy="92" r="64" fill="none" stroke="var(--smoke-2)" stroke-width="1.5"/>
+        <line x1="205" y1="185" x2="112" y2="106" stroke="var(--hl)" stroke-width="2" stroke-dasharray="5 6" filter="url(#soft)"/>
+        <line x1="277" y1="187" x2="374" y2="112" stroke="var(--hl)" stroke-width="2" stroke-dasharray="5 6" filter="url(#soft)"/>
+      </svg>
+      <span class="eno-avatar eno-avatar--ring" style="position:absolute;left:198px;top:173px;width:84px;height:84px;font-size:33.6px">LB</span>
+      <span class="eno-avatar" style="position:absolute;left:58px;top:56px;width:56px;height:56px;font-size:22.4px">TI</span>
+      <span class="eno-avatar" style="position:absolute;left:372px;top:64px;width:56px;height:56px;font-size:22.4px">FD</span>
+      <span class="lbl" style="left:190px;top:340px;width:100px;font-weight:700;color:var(--paper)">Tu comunidad</span>
+      <span class="lbl" style="left:16px;top:154px;width:140px">La de un enólogo</span>
+      <span class="lbl" style="left:330px;top:162px;width:140px">La de una finca</span>
+    </div>
+    <div style="flex:1 1 440px;min-width:0">
+      <span class="eyebrow">CH 04 · Comunidad</span>
+      <h2 id="t-comunidad" class="display display--sec" style="margin-top:18px">Tu comunidad crece <span class="hl">cuando se junta con otras.</span></h2>
+      <ul class="rows" style="margin-top:32px">
+        <li><i class="eno-icon icon-user-plus" style="--c:var(--sig-yellow)" aria-hidden="true"></i><div><b>Tus seguidores te siguen adentro</b><p>Compartís tu link y tu gente llega directo a tu espacio.</p></div></li>
+        <li><i class="eno-icon icon-bell" style="--c:var(--sig-cyan)" aria-hidden="true"></i><div><b>Se enteran de todo lo que hacés</b><p>Reciben un aviso cada vez que publicás, abrís una experiencia o lanzás una preventa.</p></div></li>
+        <li><i class="eno-icon icon-compass" style="--c:var(--sig-green)" aria-hidden="true"></i><div><b>Otras comunidades te descubren</b><p>Tu gente conoce a otros creadores, y la gente de ellos te puede conocer a vos.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Cómo cobrás -->
+<section id="como-cobras" class="sec sec--alt">
+  <div class="wrap split split--top">
+    <div class="head" style="margin:0">
+      <span class="eyebrow">CH 05 · Cómo cobrás</span>
+      <h2 class="display display--sec">La plata va <span class="hl">directo a tu cuenta.</span></h2>
+    </div>
+    <ul class="rows">
+      <li><i class="eno-icon icon-link" style="--c:var(--sig-yellow)" aria-hidden="true"></i><div><b>Conectás tu cuenta de Mercado Pago</b></div></li>
+      <li><i class="eno-icon icon-tag" style="--c:var(--sig-cyan)" aria-hidden="true"></i><div><b>Ponés tu precio</b></div></li>
+      <li><i class="eno-icon icon-wallet" style="--c:var(--sig-green)" aria-hidden="true"></i><div><b>Tu comunidad paga dentro de Enosfera</b><p>Y la plata llega a tu cuenta, sin intermediarios que la retengan.</p></div></li>
+      <li><i class="eno-icon icon-shopping-bag" style="--c:var(--sig-magenta)" aria-hidden="true"></i><div><b>El cargo por servicio lo paga quien compra</b><p>Ya está incluido en el precio final que ve.</p></div></li>
+      <li><i class="eno-icon icon-receipt-text" style="--c:var(--sig-yellow)" aria-hidden="true"></i><div><b>De tu lado, solo la comisión de Mercado Pago</b></div></li>
+      <li><i class="eno-icon icon-ticket" style="--c:var(--hl)" aria-hidden="true"></i><div><b>En las preventas, el cobro se confirma al llegar a la meta</b></div></li>
+    </ul>
+  </div>
+
+  <div class="wrap">
+    <div class="cobro-tvs" role="group" aria-label="Ejemplo ilustrativo: una cata a 50.000 pesos">
+      <figure class="tv-fig reveal" style="--i:0">
+        <div class="tv"><div class="tv-screen scanlines"><span class="tv-ch">CH 01 · Lo que cargás vos</span><strong class="tv-big chroma">$ 50.000</strong><span class="tv-label">Tu precio</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+      </figure>
+      <i class="eno-icon icon-arrow-right cobro-arrow" aria-hidden="true"></i>
+      <figure class="tv-fig reveal" style="--i:1">
+        <div class="tv tv--piedra"><div class="tv-screen scanlines"><span class="tv-ch">CH 02 · Lo que ve tu comunidad</span><strong class="tv-big chroma">$ 55.000</strong><span class="tv-label">Precio final</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+        <figcaption><p class="small">Incluye el cargo por servicio. No hay nada más para pagar.</p></figcaption>
+      </figure>
+      <i class="eno-icon icon-arrow-right cobro-arrow" aria-hidden="true"></i>
+      <figure class="tv-fig reveal" style="--i:2">
+        <div class="tv tv--tinta"><div class="tv-screen scanlines"><span class="tv-ch">CH 03 · Lo que llega a tu cuenta</span><strong class="tv-big chroma">$ 50.000</strong><span class="tv-label">Menos la comisión de Mercado Pago</span></div><div class="tv-knobs" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+      </figure>
+    </div>
+    <p class="small" style="margin-top:28px;text-align:center">Ejemplo ilustrativo de una cata a $ 50.000. Los montos son de ejemplo: el cargo por servicio y la comisión de Mercado Pago pueden variar.</p>
+  </div>
+</section>
+
+<!-- Cómo empezar -->
+<section class="sec" aria-labelledby="t-empezar">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">A continuación</span>
+      <h2 id="t-empezar" class="display display--sec">Cómo <span class="hl">empezar.</span></h2>
+    </div>
+    <div class="start-grid">
+      <article class="card reveal" style="--i:0"><div class="card-top"><span class="eyebrow">Paso 01</span><i class="eno-icon icon-pen-line" aria-hidden="true"></i></div><h3>Postulate</h3><p>Contanos quién sos, qué hacés y qué te gustaría ofrecer. Te lleva cinco minutos.</p></article>
+      <article class="card reveal" style="--i:1"><div class="card-top"><span class="eyebrow">Paso 02</span><i class="eno-icon icon-badge-check" aria-hidden="true"></i></div><h3>Revisamos tu perfil</h3><p>El equipo lee tu postulación y, si encaja con esta etapa, te da acceso.</p></article>
+      <article class="card reveal" style="--i:2"><div class="card-top"><span class="eyebrow">Paso 03</span><i class="eno-icon icon-share-2" aria-hidden="true"></i></div><h3>Armás tu espacio y empezás</h3><p>Compartís tu link en la bio y tu comunidad te empieza a seguir.</p></article>
+    </div>
+    <div class="callout"><i class="dot" aria-hidden="true"></i><p><b>En el lanzamiento, el cupo de creadores es limitado y curado.</b> Queremos acompañar de cerca a cada uno.</p></div>
+  </div>
+</section>
+
+<!-- Preguntas -->
+<section id="preguntas" class="sec sec--alt">
+  <div class="wrap faq-grid">
+    <div class="head" style="margin:0">
+      <span class="eyebrow">CH 06 · Preguntas</span>
+      <h2 class="display display--sec">Preguntas <span class="hl">frecuentes.</span></h2>
+      <p class="small">¿Te quedó alguna duda? Escribinos a <a href="mailto:creadores@enosfera.example">creadores@enosfera.example</a></p>
+    </div>
+    <div class="faq">
+      <details name="faq" open><summary><span>¿Cuánto cuesta?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Unirte es gratis. El cargo por servicio lo paga quien compra y ya está incluido en el precio final que ve.</p></details>
+      <details name="faq"><summary><span>¿Necesito ser monotributista para empezar?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>No. Para vender hace falta tener CUIT y conectar tu cuenta de Mercado Pago, pero eso te lo pedimos recién cuando publiques tu primer producto pago.</p></details>
+      <details name="faq"><summary><span>¿Cómo y cuándo cobro?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>En tu cuenta de Mercado Pago, según el plazo de acreditación que elijas ahí.</p></details>
+      <details name="faq"><summary><span>¿Cómo funciona una preventa?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Vos definís la meta mínima y la fecha límite. Si no se llega a la meta, no se le cobra a nadie. Cada persona que compra recibe un vale digital único, que puede regalar o transferir y que canjea por el producto.</p></details>
+      <details name="faq"><summary><span>¿Qué recibe quien compra en una preventa?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>El producto o la recompensa que ofrecés, con un vale que lo respalda. Es una compra anticipada, no una inversión.</p></details>
+      <details name="faq"><summary><span>¿Se puede regalar una cata o un curso?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Sí. Quien compra puede regalar o transferir su lugar a otra persona dentro de Enosfera, sin costo. Un contenido se puede regalar mientras no se haya abierto.</p></details>
+      <details name="faq"><summary><span>¿Cómo se arma mi reputación?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Con las calificaciones de quienes compraron y usaron lo que ofrecés. Solo califica quien estuvo, y el resultado se ve en tu perfil.</p></details>
+      <details name="faq"><summary><span>¿Qué pasa si cancelo una experiencia?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Se les devuelve el 100 % a quienes compraron.</p></details>
+      <details name="faq"><summary><span>¿Qué pasa si un comprador se arrepiente?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Tiene derecho de arrepentimiento según la ley. Lo pide desde el Botón de arrepentimiento y la plataforma gestiona la devolución.</p></details>
+      <details name="faq"><summary><span>¿El contenido es mío?</span><i class="eno-icon icon-plus i-plus" aria-hidden="true"></i><i class="eno-icon icon-minus i-minus" aria-hidden="true"></i></summary><p>Sí. Todo lo que publicás es tuyo.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Llamada final -->
+<section class="cta scanlines scanlines--soft" aria-labelledby="t-cta">
+  <div class="cta-in">
+    <svg width="56" height="56" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="#E9DA8C"/><circle cx="32" cy="32" r="26" fill="none" stroke="#F5F1EA" stroke-width="6"/></svg>
+    <span class="eyebrow">Postulaciones abiertas</span>
+    <h2 id="t-cta" class="display display--sec">Seguí haciendo crecer tu comunidad. <span class="hl-alt">Lo que viene lo hacen juntos.</span></h2>
+    <p class="lead">La próxima cata, el curso que venís pensando, esa línea que todavía no embotellaste. Empezá por darle a tu comunidad un lugar donde seguir creciendo.</p>
+    <button type="button" class="btn-pill btn-pill--solid" data-open>Postulate como creador<span class="btn-arrow"><i class="eno-icon icon-arrow-right" aria-hidden="true"></i></span></button>
+    <p class="small">¿Preferís escribirnos? <a href="mailto:creadores@enosfera.example" data-copy="creadores@enosfera.example">creadores@enosfera.example</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <span class="eno-logo" role="img" aria-label="Enosfera"><svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><path d="M6.08 30 55.06 44A26 26 0 0 1 6.08 30Z" fill="var(--logo-liquid)"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--logo-ring)" stroke-width="6"/></svg><span style="font-size:23.4px">enosfera</span></span>
+        <div class="small" style="margin-top:14px;display:flex;align-items:center;gap:6px"><i class="eno-icon icon-map-pin" style="font-size:16px" aria-hidden="true"></i>Hecho en Mendoza</div>
+      </div>
+      <nav aria-label="Legales" class="footer-legal">
+        <a class="focusable" href="#terminos">Términos y condiciones</a>
+        <a class="focusable" href="#privacidad">Política de privacidad</a>
+        <a class="eno-regret focusable" href="#arrepentimiento"><i class="eno-icon icon-undo-2" aria-hidden="true"></i>Botón de arrepentimiento</a>
+      </nav>
+      <div class="social">
+        <a class="focusable" href="#instagram" aria-label="Instagram"><i class="eno-icon icon-instagram" aria-hidden="true"></i></a>
+        <a class="focusable" href="#youtube" aria-label="YouTube"><i class="eno-icon icon-youtube" aria-hidden="true"></i></a>
+        <a class="focusable" href="mailto:creadores@enosfera.example" aria-label="Email"><i class="eno-icon icon-mail" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Beber con moderación. Prohibida su venta a menores de 18 años.</span>
+      <span>© 2026 Enosfera</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="modal" id="modal" aria-labelledby="m-t">
+  <div class="sheet">
+    <button type="button" class="modal__close focusable" aria-label="Cerrar" data-close><i class="eno-icon icon-x" aria-hidden="true"></i></button>
+
+    <form class="form" id="form" novalidate>
+      <div>
+        <span class="eno-tag eno-tag--exclusivo"><i class="eno-icon icon-mail" aria-hidden="true"></i>Cupo limitado</span>
+        <h2 id="m-t">Postulate como creador</h2>
+        <p class="t2" style="margin:0">Contanos quién sos y qué hacés. Leemos cada postulación y te respondemos.</p>
+      </div>
+
+      <div class="eno-notice eno-notice--error" role="alert" id="n-server" hidden><i class="eno-icon icon-circle-alert" aria-hidden="true"></i><div><b>No pudimos enviar tu postulación.</b><p>Lo que escribiste sigue acá. Probá de nuevo en un momento.</p></div></div>
+      <div class="eno-notice eno-notice--error" role="alert" id="n-fields" hidden><i class="eno-icon icon-circle-alert" aria-hidden="true"></i><div><b>Faltan algunos datos.</b><p>Revisá los campos marcados y volvé a enviar.</p></div></div>
+
+      <div class="form-grid">
+        <div class="eno-field" data-field="nombre"><label for="f-nombre">Nombre</label><div class="eno-field__box"><input id="f-nombre" name="nombre" placeholder="Cómo te conocen" autocomplete="name"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="eno-field" data-field="email"><label for="f-email">Email</label><div class="eno-field__box"><input id="f-email" name="email" type="email" placeholder="vos@ejemplo.com" autocomplete="email"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="eno-field" data-field="whatsapp"><label for="f-whatsapp">WhatsApp</label><div class="eno-field__box"><i class="eno-icon icon-phone" aria-hidden="true"></i><input id="f-whatsapp" name="whatsapp" type="tel" placeholder="261 555 0123" autocomplete="tel"></div><span class="eno-field__hint" hidden></span></div>
+        <div class="group" data-field="provincia" style="gap:6px">
+          <label for="f-prov" class="group__l">Provincia</label>
+          <select id="f-prov" name="provincia" class="ctl"><option value="">Elegí tu provincia</option></select>
+          <span class="err" hidden></span>
+        </div>
+      </div>
+
+      <div class="group" role="group" aria-label="Tipo de creador" data-field="tipo">
+        <span class="group__l">Tipo de creador</span>
+        <div class="chips" data-chips="tipo" data-mode="single"></div>
+        <span class="err" hidden></span>
+      </div>
+
+      <div class="eno-field" data-field="red"><label for="f-red">Link de Instagram o red principal</label><div class="eno-field__box"><i class="eno-icon icon-link" aria-hidden="true"></i><input id="f-red" name="red" placeholder="instagram.com/tu.usuario"></div><span class="eno-field__hint" hidden></span></div>
+
+      <div class="group" role="group" aria-label="Cantidad aproximada de seguidores">
+        <span class="group__l">Cantidad aproximada de seguidores</span>
+        <div class="chips" data-chips="seguidores" data-mode="single"></div>
+        <span class="xxs tm">No hay un mínimo. Nos sirve para conocerte.</span>
+      </div>
+
+      <div class="group" role="group" aria-label="Qué te interesa ofrecer">
+        <span class="group__l">¿Qué te interesa ofrecer? <span style="font-weight:400;color:var(--text-muted)">Podés elegir más de una.</span></span>
+        <div class="chips" data-chips="intereses" data-mode="multi"></div>
+      </div>
+
+      <div class="eno-field" id="w-preventa" hidden><label for="f-preventa">¿Qué producto lanzarías y para cuándo?</label><div class="eno-field__box"><i class="eno-icon icon-ticket" aria-hidden="true"></i><input id="f-preventa" name="preventa" placeholder="Por ejemplo: una línea de criolla, para la cosecha 2027"></div></div>
+
+      <div class="group" style="gap:6px">
+        <label for="f-hoy" class="group__l">¿Cómo vendés hoy?</label>
+        <textarea id="f-hoy" name="hoy" rows="2" maxlength="280" class="ctl" placeholder="Por ejemplo: armo las catas por WhatsApp y cobro por transferencia."></textarea>
+      </div>
+
+      <div style="position:absolute;left:-9999px" aria-hidden="true"><label for="f-sitio">No completes este campo</label><input id="f-sitio" name="sitio" tabindex="-1" autocomplete="off"></div>
+
+      <div data-field="acepta">
+        <label class="eno-check"><input type="checkbox" id="f-acepta" name="acepta"><span class="eno-check__box"><i class="eno-icon icon-check" aria-hidden="true"></i></span><span>Declaro que soy mayor de 18 años y acepto la política de privacidad.</span></label>
+        <span class="err" style="display:block;margin-left:36px" hidden></span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+        <button type="submit" class="eno-btn eno-btn--primary" id="submit">Enviar postulación</button>
+        <span class="xxs tm" style="flex:1;min-width:200px">Postularte es gratis y no te compromete a nada.</span>
+      </div>
+    </form>
+
+    <div class="success" id="success" hidden>
+      <span class="success__ico"><i class="eno-icon icon-circle-check" aria-hidden="true"></i></span>
+      <h2>¡Recibimos tu postulación!</h2>
+      <p class="t2" style="margin:0;max-width:420px">Te escribimos pronto. La vamos a leer con atención y te respondemos por email o por WhatsApp.</p>
+      <div style="margin-top:16px"><button type="button" class="eno-btn eno-btn--secondary" data-close>Listo</button></div>
+    </div>
+  </div>
+</dialog>
+
+<script src="assets/js/form.js"></script>
+<script src="assets/js/crt.js"></script>
+</body>
+</html>
